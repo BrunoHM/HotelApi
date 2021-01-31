@@ -7,20 +7,19 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.senior.challenge.Hotel.dtos.PersonDto;
-import com.senior.challenge.Hotel.services.Person.PersonService;
-
+import com.senior.challenge.Hotel.dtos.CheckInOutDto;
+import com.senior.challenge.Hotel.services.CheckInOut.CheckInOutService;
 
 @RestController
 @CrossOrigin(origins = "*")
-public class PersonController {
+public class CheckInOutController {
 
 	@Autowired
-	PersonService personService;
+	CheckInOutService checkInOutService;
 	
-	@PostMapping(path = "/savePerson")
-	public boolean insertNewPerson(@RequestBody PersonDto personDto){		
-		return personService.saveNewPerson(personDto);
+	@PostMapping(path = "/saveCheckInOut")
+	public boolean insertNewCheckInOut(@RequestBody CheckInOutDto checkInOutDto){		
+		return checkInOutService.saveNewCheckInOut(checkInOutDto);
 	}
 	
 }
