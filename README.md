@@ -2,7 +2,7 @@
 
 Banco de dados - Postgresql {
 
-	Database: DesafioSenior;
+	Database: Desafio;
   
 	Schema: dtbHotel;
   
