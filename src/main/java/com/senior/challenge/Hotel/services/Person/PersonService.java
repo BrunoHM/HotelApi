@@ -13,4 +13,7 @@ public interface PersonService {
 	
 	public List<Object> findAllPersonAtHotel();
 	
+	public List<Person> findAllPersonByNameDocTel(PersonDto personDto);
+	
+	
 }
