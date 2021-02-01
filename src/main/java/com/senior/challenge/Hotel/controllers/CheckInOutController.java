@@ -22,4 +22,9 @@ public class CheckInOutController {
 		return checkInOutService.saveNewCheckInOut(checkInOutDto);
 	}
 	
+	@PostMapping(path = "/saveCheckOut")
+	public boolean insertNewCheckOut(@RequestBody CheckInOutDto checkOutDto){		
+		return checkInOutService.saveNewCheckOut(checkOutDto);
+	}
+	
 }
