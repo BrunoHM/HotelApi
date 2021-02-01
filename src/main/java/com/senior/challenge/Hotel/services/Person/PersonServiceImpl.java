@@ -1,6 +1,8 @@
 package com.senior.challenge.Hotel.services.Person;
 
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +18,7 @@ public class PersonServiceImpl implements PersonService {
 	
 	@Override
 	public boolean saveNewPerson(PersonDto personDto) {
-		Person person = new Person(  personDto.getIdPerson(),
+		Person person = new Person(  personDto.getId(),
 										 personDto.getName(),
 									     personDto.getLastName(),
 									     personDto.getCpf(),
@@ -27,5 +29,14 @@ public class PersonServiceImpl implements PersonService {
 			return true;
 	}
 
+	@Override
+	public List<Object> findAllPersonOutHotel() {
+		return personRepository.findAllPersonOutHotel();
+	}
 
+	@Override
+	public List<Object> findAllPersonAtHotel() {
+		return personRepository.findAllPersonAtHotel();
+	}
+	
 }
