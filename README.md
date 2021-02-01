@@ -157,5 +157,33 @@ Banco de dados - Postgresql {
 			}"
 		)
 	}
-
 }
+
+# Instruções de instalação/Execução
+
+##### Instalar e configurar Java 13
+
+##### Instalar e configurar apache maven 3.6
+
+##### Instalar apache tomcat 8.5
+
+##### Instalar e configurar mysql 8
+
+1 - Fazer download do projeto da branch master/main.
+
+##### Preparação do banco de dados
+
+2 - Criar e definir banco de dados postgresql conforme descrito anteriormente.
+
+##### Preparação da aplicação
+
+3 - Editar conexão, usuário e senha com banco de dados mysql no arquivo "%HotelApi-main%/src/main/resources/application.properties"
+
+4 - Através da linha de comando, navegar até a pasta do projeto
+
+5 - Executar comando "mvn install" na linha de comando
+
+6 - Navegar até a pasta "target"
+
+7 - Executar arquivo .jar semelhante a "HotelChallenge-0.0.1-SNAPSHOT.jar".
+
