@@ -1,19 +1,15 @@
 package com.senior.challenge.Hotel.dtos;
 
-import java.sql.Timestamp;
-
-import com.senior.challenge.Hotel.entities.Person;
-
 public class CheckInOutDto {
 	
 	private Long idCheckInOut;
 	private String entryDate;
 	private String departureDate;
 	private boolean additionalGarage;
+	private double billingValue;
 	
-	private Person FKPerson_idPerson;
+	private Long person_idPerson;
 	
-
 	public Long getIdCheckInOut() {
 		return idCheckInOut;
 	}
@@ -46,11 +42,20 @@ public class CheckInOutDto {
 		this.additionalGarage = additionalGarage;
 	}
 
-	public Person getFKPerson_idPerson() {
-		return FKPerson_idPerson;
+	public Long getPerson_idPerson() {
+		return person_idPerson;
 	}
 
-	public void setFKPerson_idPerson(Person fKPerson_idPerson) {
-		FKPerson_idPerson = fKPerson_idPerson;
+	public void setPerson_idPerson(Long person_idPerson) {
+		this.person_idPerson = person_idPerson;
 	}
+
+	public double getBillingValue() {
+		return billingValue;
+	}
+
+	public void setBillingValue(double billingValue) {
+		this.billingValue = billingValue;
+	}
+	
 }

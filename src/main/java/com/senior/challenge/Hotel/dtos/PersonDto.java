@@ -2,18 +2,18 @@ package com.senior.challenge.Hotel.dtos;
 
 public class PersonDto {
 
-	private Long idPerson;
+	private Long id;
 	private String name;
 	private String lastName;
 	private String cpf;
 	private String ddd;
 	private String telephoneNumber;
-
-	public Long getIdPerson() {
-		return idPerson;
+	
+	public Long getId() {
+		return id;
 	}
-	public void setIdPerson(Long idPerson) {
-		this.idPerson = idPerson;
+	public void setId(Long idPerson) {
+		this.id = idPerson;
 	}
 	public String getName() {
 		return name;
@@ -45,4 +45,5 @@ public class PersonDto {
 	public void setTelephoneNumber(String telephoneNumber) {
 		this.telephoneNumber = telephoneNumber;
 	}
+	
 }
