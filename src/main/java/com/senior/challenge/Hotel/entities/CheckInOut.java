@@ -37,9 +37,11 @@ public class CheckInOut {
 	@Column(name="\"additionalGarage\"")
 	private boolean additionalGarage;
 	
-	/*
+	@Column(name="\"billingValue\"")
+	private double billingValue;
+	
 	@ManyToOne
-	@JoinColumn(name = "FKPerson_idPerson", referencedColumnName = "idPerson")
-	private Person FKPerson_idPerson;
-	*/
+	@JoinColumn(name = "\"person_idPerson\"", referencedColumnName = "\"id\"")
+	private Person person_idPerson;
+	
 }

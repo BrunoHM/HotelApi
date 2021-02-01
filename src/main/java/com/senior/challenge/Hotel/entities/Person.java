@@ -11,7 +11,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
 import lombok.Setter;
 import lombok.ToString;
 
@@ -24,7 +23,6 @@ public class Person{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id")
-	@NonNull
 	private Long id;
 	
 	@Column(name="\"firstName\"")
@@ -41,6 +39,5 @@ public class Person{
 	
 	@Column(name="\"telephoneNumber\"")
 	private String telephoneNumber;
-	
 	
 }
